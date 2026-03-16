@@ -1,31 +1,15 @@
-let taskList = [];
 
-const addBtn =document.getElementById('addDeadlineBtn');
+// FR4 
+// default 4 hours.
+let userAvailability = {
+   sunday: 4, monday: 4, tuesday: 4, wednesday: 4, thursday: 4, friday: 4, saturday: 4
+};
 
-addBtn.addEventListener('click',function(){
-    const task = document.getElementById('taskInput').value;
-    const date = document.getElementById('dateInput').value;
-    const hours = document.getElementById('hoursInput').value;
+//FR4 availability logic here!
+function getAvailabilityFromUser() {
+}
 
-    if(!task|| !date || !hours){
-        alert("Please fill everthing above first!");
-        return;
-    }
 
-    const newTask = {
-        taskName: task, deadline: date, hoursNeeded: Number(hours)
-    };
-
-    taskList.push(newTask);
-
-    sort();
-    
-    updateTaskDisplay();
-
-    document.getElementById('taskInput').value = "";
-    document.getElementById('dateInput').value = "";
-    document.getElementById('hoursInput').value = "";
-});
 
 function sort() {
     for (let i = 0; i < taskList.length; i++) {
@@ -47,10 +31,16 @@ function updateTaskDisplay() {
     const listElement = document.getElementById('taskListDisplay');
     
     let listContent = "";
+    let totalHours = 0;
 
     taskList.forEach((task) => {
         listContent = listContent + "<li>" + task.taskName + " - Due: " + task.deadline + "</li>";
+        totalHours = totalHours + task.hoursNeeded;
     });
+
+    if (taskList.length > 0) {
+        listContent = listContent + "<li><strong>Total Load: " + totalHours + " hours</strong></li>";
+    }
 
     if (taskList.length === 0) {
         listElement.innerHTML = '<p id="empty-message">No tasks added yet. Start typing above!</p>';
