@@ -6,16 +6,24 @@
         <link rel="stylesheet" href="Style.css">
     </head>
     <body> 
+        <nav>
+        <div class="logo"> Smart Study Planner</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+          </nav>
         <form >
             <p>
-            <label>Username:
-                <input type="text" name="username"></label><br>
+           <label>Email:
+                <input type="email" name="email"></label><br>
             <label>Password: 
-                <input type="password" name="password">
-                </label>
+                <input type="password" name="password"></label><br>
             </p>
+            <p>Don't have an account? <a href="register.html">Register</a></p>
             <p>
-               <button class="btn"type="Submit">Submit</button>
+               <button class="btn"type="submit">Submit</button>
                <button class="btn" type="reset">Clear</button>
             </p>
         </form>
