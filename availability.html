@@ -33,19 +33,20 @@
                 </select>
             </p>
             <p>
-            Start Time:<br>
-            <input type:"time">
+            
+            <lable for="startTime">Start Time:</lable><br>
+            <input type="time" id="startTime" name="startTime">
 </p>
 <p>
-    End Time :<br>
-            <input type:"time">
+             <lable for="endTime">End Time:</lable><br>
+            <input type="time" id="endTime" name="endTime" >
 </p>
 <p>
     <button class="btn">Add</button>
 </p>
         </form>
         <h2>Saved Availability Successfuly</h2>
-        <table border="1">
+        <table>
             <tr>
                 <th>Day</th>
                 <th>Start</th>
@@ -56,7 +57,10 @@
                 <td>Sunday</td>
                 <td>4 PM</td>
                 <td>6 PM</td>
-                <td>Edit| Delete</td>
+                <td>
+                    <buuton class="btn-edit">Edit</buuton>
+                    <buuton class="btn-remove">Delete</buuton>
+                </td>
             </tr>
         </table>
  

@@ -212,6 +212,61 @@ td {
 .medium { background: #fef9c3; color: #854d0e; }
 .hard   { background: #fee2e2; color: #991b1b; }
 
+.availability-page h1{
+  text-align:center;
+  margin-top: 40px;
+  margin-buttom:10px ;
 
+}
+.availability-page h3{
+  text-align:center;
+  color:#8b5e3c;
+  margin-bottom:28px;
+  font-weight: normal;
+}
+.availability-page form{
+  max-width:700px;
+  margin:0 30px;
+  background:#ffffff;
+  padding:29px;
+  border-radius: 14px;
+  box-shadow:0 4px 14px rgba(0, 0, 0, 0.08)
+  border: 1px solid #eee;
+}
 
+.availability-page form p{
+  margin-bottom: 19px;
+}
+.availability-page btn{
+  margin-top:8px;
+}
+.availability-page h2{
+  max-width:700px;
+  margin:35px auto 15px;
+  color:#111827;
+}
 
+.availability-page table{
+  width :700px;
+  max-width:calc(100%-40px);
+  background:#ffffff;
+  border-radius: 14px;
+  overflow:hidden;
+  box-shadow:0 4px 14px rgba(0,0,0,0.08);
+  border:1px solid #eee;
+
+}
+.availability-page td:last-child{
+  white-space: nowrap;
+
+}
+.availability-page .btn-edit,.availability-page .btn-remove{
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+@media (max-width:768px){
+  .availability-page form;
+  .availability-page table{
+    width:100%
+  }
+}
