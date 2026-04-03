@@ -1,4 +1,4 @@
-* { box-sizing: border-box; margin: 100; padding: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root{
     --bg: #fcf9f9;
@@ -10,6 +10,27 @@ body{
    font-weight: normal;
    background: var(--bg);
    color: var(--text);
+}
+.intro {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.intro h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.intro h3 {
+  color: #888;
+  margin-bottom: 32px;
+}
+
+.intro .btn {
+  background-color: #d8c3c3;
+  color: white;
+  font-size: 16px;
+  padding: 14px 32px;
 }
 h1 { 
     font-size: 32px; }
@@ -24,6 +45,10 @@ input,select {
   font-size: 14px;
   width: 100%;
   box-sizing: border-box;
+}
+input:focus {
+  outline:none;
+  border-color: #bc9d9d;
 }
 nav {
   background-color:#d8c3c3;
@@ -66,7 +91,28 @@ nav ul li a:hover {
   max-width: 780px;
   margin: 32px auto;
   padding: 0 20px;
-} /* Card */
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.login-container .card {
+  width: 500px;
+  padding: 65px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+}
+.login-container h2 {
+  margin-bottom: 25px;
+}
+
+.login-container p {
+  text-align: center;
+  margin-top: 15px;
+}
+ /* Card */
 .card {
   background: white;
   border-radius: 12px;
@@ -88,7 +134,7 @@ label {
   color: #555;
 }
 .btn-add {
-  background: #1a1a1a;
+  background-color: #d8c3c3;
   color: white;
   border: none;
   border-radius: 8px;
