@@ -3,46 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Progress Tracking</title>
+     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-
-<h1>Study Progress Tracking</h1>
-
-<p>Progress: 70%</p>
-
-<div>
-    <h3>Course 1</h3>
-    <p>Date: 2026-03-01</p>
-    <p>Status: Completed</p>
-    <button>✓</button>
-    <button>✕</button>
-</div>
-
-<hr>
-
-<div>
-    <h3>Course 2</h3>
-    <p>Date: 2026-04-02</p>
-    <p>Status: Missed</p>
-    <button>✓</button>
-    <button>✕</button>
-</div>
-
-<hr>
-
-<div>
-    <h3>Course 3</h3>
-    <p>Date: 2026-04-03</p>
-    <p>Status: Pending</p>
-    <button>✓</button>
-    <button>✕</button>
-</div>
-<div>
-    <h3>Course 4</h3>
-    <p>Date: 2026-05-03</p>
-    <p>Status: Pending</p>
-    <button>✓</button>
-    <button>✕</button>
-</div>
+ 
+    <nav>
+        <div class="logo">Smart Study Planner</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+ 
+    <div class="container">
+        <h1>Study Progress Tracking</h1>
+ 
+        <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width: 70%;"></div>
+        </div>
+        <p>Progress: 70%</p>
+ 
+        <div class="card">
+            <h3>Course 1</h3>
+            <p>Date: 2026-03-01</p>
+            <p>Status: <span class="badge easy">Completed</span></p>
+            <button class="btn-edit">✓</button>
+            <button class="btn-remove">✕</button>
+        </div>
+ 
+        <div class="card">
+            <h3>Course 2</h3>
+            <p>Date: 2026-04-02</p>
+            <p>Status: <span class="badge hard">Missed</span></p>
+            <button class="btn-edit">✓</button>
+            <button class="btn-remove">✕</button>
+        </div>
+ 
+        <div class="card">
+            <h3>Course 3</h3>
+            <p>Date: 2026-04-03</p>
+            <p>Status: <span class="badge medium">Pending</span></p>
+            <button class="btn-edit">✓</button>
+            <button class="btn-remove">✕</button>
+        </div>
+ 
+        <div class="card">
+            <h3>Course 4</h3>
+            <p>Date: 2026-05-03</p>
+            <p>Status: <span class="badge medium">Pending</span></p>
+            <button class="btn-edit">✓</button>
+            <button class="btn-remove">✕</button>
+        </div>
+ 
+    </div>
+ 
 </body>
 </html>
+ 
