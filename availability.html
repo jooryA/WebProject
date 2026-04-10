@@ -4,7 +4,7 @@
         <title>availability</title>
         <link rel="stylesheet" href="Style.css">
     </head>
-    <body>
+    <body class="availability-page">
 
         <nav>
             <div class="logo">Smart Study Planner</div>
@@ -22,7 +22,8 @@
         <form>
             <p>
                 Day:<br>
-                <select>
+                <label for="day">Day:</label><br>
+                <select id="day" name="day">
                     <option>Sunday</option>
                      <option>Monday</option>
                       <option>Tuesday</option>
@@ -58,8 +59,8 @@
                 <td>4 PM</td>
                 <td>6 PM</td>
                 <td>
-                    <buuton class="btn-edit">Edit</buuton>
-                    <buuton class="btn-remove">Delete</buuton>
+                    <button class="btn-edit">Edit</button>
+                    <button class="btn-remove">Delete</button>
                 </td>
             </tr>
         </table>
