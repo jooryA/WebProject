@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8" />
-    <!-- for compatability -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Statistics</title>
     <link rel="stylesheet" href="Style.css">
@@ -13,15 +12,42 @@
     <nav>
         <div class="logo"> Smart Study Planner</div>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="notifications.html">🔔 <span id="badge">2</span></a></li>
+            <li><a href="dashboard.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">🔔 <span id="badge">4</span></a>
+                <div class="dropdown-menu">
+                    <p>Today's Sessions</p>
+                    <ul>
+                        <li>Math - 6:00 PM</li>
+                        <li>Physics - 8:00 PM</li>
+                    </ul>
+                    <p>Upcoming Deadlines</p>
+                    <ul>
+                        <li>Math - Assignment, April 13, 2026</li>
+                        <li>Physics - Lab Report, April 15, 2026</li>
+                    </ul>
+                </div>
+            </li>
         </ul>
     </nav>
-    <h4>Weekly Study Hours</h2>
-    <canvas id="studyHoursChart"></canvas>
-    <hr>
-    <h4>Progress Trends</h2>
-    <canvas id="progressTrendsChart"></canvas>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>Weekly Study Hours</h3>
+            <canvas id="studyHoursChart"></canvas>
+        </div>
+
+        <div class="card">
+            <h3>Progress Trends</h3>
+            <canvas id="progressTrendsChart"></canvas>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="statistics.js"></script>
 </body>
 
 </html>
