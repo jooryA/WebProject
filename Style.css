@@ -92,6 +92,12 @@ nav ul li a:hover {
   margin: 32px auto;
   padding: 0 20px;
 }
+nav ul li a.active {
+  color: #b8908f;
+  font-weight: bold;
+  border-bottom: 2px solid #b8908f;
+  border-radius: 0;
+}
 .login-container {
   display: flex;
   justify-content: center;
