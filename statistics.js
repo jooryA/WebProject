@@ -7,8 +7,8 @@ new Chart(ctx, {
         datasets: [{
             label: "Study Hours",
             data: [2, 1, 3, 4, 2, 5, 1],
-            backgroundColor: "#d8c3c3",
-            borderColor: "#d8c3c3",
+            backgroundColor: "#9c95f1",
+            borderColor: "#9c95f1",
         }]
     }
 })
@@ -25,8 +25,8 @@ new Chart(ctx2, {
         datasets: [{
             label: "Completion Rate %",
             data: [60, 70, 65, 80],
-            backgroundColor: "#d8c3c3",
-            borderColor: "#d8c3c3"
+            backgroundColor: "#9c95f1",
+            borderColor: "#9c95f1"
         }]
     }
 })
