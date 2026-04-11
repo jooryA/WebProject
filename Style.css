@@ -254,6 +254,8 @@ td {
 
 .availability-page table{
   width :700px;
+    margin: 20px auto;
+
   max-width:calc(100%-40px);
   background:#ffffff;
   border-radius: 14px;
@@ -266,9 +268,9 @@ td {
   white-space: nowrap;
 
 }
+
 .availability-page h2{
-  text-align: center;
-}
+  text-align: center;}
 .availability-page .btn-edit,.availability-page .btn-remove{
   margin-top: 4px;
   margin-bottom: 4px;
