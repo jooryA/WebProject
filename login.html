@@ -10,26 +10,27 @@
         <div class="logo"> Smart Study Planner</div>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="login.html">Login</a></li>
+            <li><a href="login.html" class="active">Login</a></li>
           <li><a href="register.html">Register</a></li>
         </ul>
           </nav>
            <div class="login-container">
               <div class="card">
               <h2>Welcome Back </h2>
-              <form>
+            <form action="dashboard.html" method="get">
                 <div class="field">
                     <label>Email:</label>
                     <input type="email" name="email">
                 </div>
                 <div class="field">
                     <label>Password:</label>
-                    <input type="password" name="password">
+                    <input type="password" name="password" required>
                 </div>
 
                 <p>Don't have an account? <a href="register.html">Register</a></p>
 
                 <p>
+                  
                   <button type="submit" class="btn-add">login</button>
                 </p>
               </form>
