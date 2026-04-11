@@ -32,6 +32,31 @@ body{
   font-size: 16px;
   padding: 14px 32px;
 }
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 60px 60px;
+}
+
+.feature-card {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 12px;
+  padding: 20px 28px;
+  text-align: center;
+}
+.feature-card .icon {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.feature-card h4 {
+  margin-bottom: 8px;
+}
+.feature-card p {
+  font-size: 13px;
+  color: #888;
+}
 h1 { 
     font-size: 32px; }
 h2 {
