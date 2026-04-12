@@ -573,63 +573,92 @@ td {
   display: flex;
   min-height: 100vh;
 }
-
 .sidebar {
   width: 230px;
   background: linear-gradient(180deg, #7c5cff, #5b3ee6);
-  min-height: 100vh;
-  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 !important;
+  margin:0; 
   color: white;
   box-shadow: 4px 0 14px rgba(91, 62, 230, 0.08);
 }
 
-.logo,
-.brand {
-  margin-bottom: 20px;
-  color: #ffffff;
-}
 
 .profile-box {
   text-align: center;
-  margin-bottom: 24px;
-}
-
-.profile-box h3,
-.profile-box p {
-  color: #ffffff;
+  padding: 30px 10px; 
 }
 
 .profile-box img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  border-radius: 50% !important;
   background: white;
-  padding: 10px;
+  padding: 5px; 
   object-fit: cover;
-  cursor: pointer;
+  display: flex !important; 
+  align-items: center;        
+  justify-content: center;    
+  text-align: center;       
+  margin: 0 auto 5px auto;
   border: 2px solid rgba(255, 255, 255, 0.4);
+  /*alt text */
+  color: #6a52e2; 
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .sidebar-menu {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  flex-grow: 1;
 }
 
 .sidebar-menu a {
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.16);
+  display: flex;   
+  align-items: center;  
+  gap: 12px;         
+  width: 100%;   
+  padding: 8px 25px;
   color: white;
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 0; 
+  box-sizing: border-box; 
   transition: 0.3s;
 }
 
-.sidebar-menu a:hover,
-.sidebar-menu a.active {
-  background: rgba(255, 255, 255, 0.28);
+.sidebar-menu a.active, 
+.sidebar-menu a:hover {
+  background: rgba(255, 255, 255, 0.2); 
+}
+/*log out */
+.logout-link {
+  margin-top: auto; 
+  display: flex;      
+  align-items: center;
+  gap: 12px;
+  background: rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 25px; 
 }
 
+.logout-link:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+.logo,
+.brand {
+  color: #ffffff;
+  padding-top: 30px !important; 
+  padding-bottom: 20px;
+  text-align: center;
+  display: block;
+}
+.profile-box h3,
+.profile-box p {
+  color: #ffffff;
+}
 .main-content {
   flex: 1;
   display: flex;
@@ -741,7 +770,7 @@ td {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(135deg, #7c5cff, #5b3ee6);
+  background: linear-gradient(135deg, #512de0, #5b3ee6);
   color: white;
   padding: 14px 20px;
   text-align: center;
