@@ -332,7 +332,6 @@ td {
 }
 .availability-page h3{
   text-align:center;
-  color:#8b5e3c;
   margin-bottom:28px;
   font-weight: normal;
 }
@@ -355,7 +354,6 @@ td {
 .availability-page h2{
   max-width:700px;
   margin:35px auto 15px;
-  color:#111827;
 }
 
 .availability-page table{
@@ -634,3 +632,47 @@ gap:20px;
   margin: 0;
   font-size: 13px;
   color: #666;}
+
+  .dashboard-footer {
+    margin-top: 40px; 
+    padding: 20px 0;
+    border-top: 1px solid #ddd; 
+    color: #666;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.contact-info span {
+    margin: 0 10px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.dashboard-grid {
+    flex: 1; 
+}
+
+.simple-footer {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-top: 1px solid #eee; /* Optional: adds a light line above the footer */
+    color: #666; /* A soft grey color */
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+}
+
+.simple-footer p {
+    margin: 5px 0;
+}
