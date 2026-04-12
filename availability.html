@@ -1,88 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>availability</title>
-        <link rel="stylesheet" href="Style.css">
-    </head>
-    <body class="availability-page">
+<head>
+    <meta charset="UTF-8">
+    <title>availability</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body class="availability-page">
 
-        <nav>
-  <div class="logo">Smart Study Planner</div>
-  <ul>
-    <li><a href="dashboard.html">Dashboard</a></li>
-    <li><a href="courses.html">Courses</a></li>
-    <li><a href="deadline.html">Deadlines</a></li>
-    <li><a href="studyPlan.html">Study Plan</a></li>
-    <li><a href="availability.html" class="active">Availability</a></li>
-    <li><a href="progress.html">Progress</a></li>
-    <li><a href="statistics.html">Statistics</a></li>
-    <li class="dropdown">
-      <a href="#">🔔 <span id="badge">4</span></a>
-      <div class="dropdown-menu">
-        <p>Today's Sessions</p>
+    <nav>
+        <div class="logo">Smart Study Planner</div>
         <ul>
-          <li>Math - 6:00 PM</li>
-          <li>Physics - 8:00 PM</li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="deadline.html">Deadlines</a></li>
+            <li><a href="studyPlan.html">Study Plan</a></li>
+            <li><a href="availability.html" class="active">Availability</a></li>
+            <li><a href="progress.html">Progress</a></li>
+            <li><a href="statistics.html">Statistics</a></li>
+
+            <li class="dropdown">
+                <a href="#">🔔 <span id="badge">4</span></a>
+                <div class="dropdown-menu">
+                    <p>Today's Sessions</p>
+                    <ul>
+                        <li>Math - 6:00 PM</li>
+                        <li>Physics - 8:00 PM</li>
+                    </ul>
+
+                    <p>Upcoming Deadlines</p>
+                    <ul>
+                        <li>Math - Assignment, April 13, 2026</li>
+                        <li>Physics - Lab Report, April 15, 2026</li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="login.html">Logout</a></li>
         </ul>
-        <p>Upcoming Deadlines</p>
-        <ul>
-          <li>Math - Assignment, April 13, 2026</li>
-          <li>Physics - Lab Report, April 15, 2026</li>
-        </ul>
-      </div>
-    </li>
-    <li><a href="login.html">Logout</a></li>
-  </ul>
-</nav>
-        <h1>Weekly Availablity</h1>
-        <h3>Please Set Your Availability Time</h3>
-        <form>
-            <p>
-                Day:<br>
-                <select id="day" name="day">
-                    <option>Sunday</option>
-                     <option>Monday</option>
-                      <option>Tuesday</option>
-                       <option>Wednesday</option>
-                        <option>Tursday</option>
-                         <option>Friday</option>
-                          <option>Saturday</option>
-                </select>
-            </p>
-            
-            <div>
-            <lable for="startTime">Start Time:</lable><br>
+    </nav>
+
+    <h1>Weekly Availability</h1>
+    <h3>Please Set Your Availability Time</h3>
+
+    <form>
+        <div>
+            Day:<br>
+            <select id="day" name="day">
+                <option>Sunday</option>
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Saturday</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="startTime">Start Time:</label><br>
             <input type="time" id="startTime" name="startTime">
-            </div>
+        </div>
 
-         <div>
-             <lable for="endTime">End Time:</lable><br>
-            <input type="time" id="endTime" name="endTime" >
-       </div>
+        <div>
+            <label for="endTime">End Time:</label><br>
+            <input type="time" id="endTime" name="endTime">
+        </div>
 
-    <div>
-    <button class="btn">Add</button>
-   </div>
-        </form>
-        <h2>Saved Availability Successfully</h2>
-        <table>
-            <tr>
-                <th>Day</th>
-                <th>Start</th>
-                <th> End</th>
-                <th>Action</th>
-            </tr>
-            <tr>
-                <td>Sunday</td>
-                <td>4 PM</td>
-                <td>6 PM</td>
-                <td>
-                    <button class="btn-edit">Edit</button>
-                    <button class="btn-remove">Delete</button>
-                </td>
-            </tr>
-        </table>
-  <!-- Chatbot Button -->
- <div class="chat-icon">💬</div>
-    </body>
+        <div>
+            <button class="btn" type="submit">Add</button>
+        </div>
+    </form>
+
+    <h2>Saved Availability Successfully</h2>
+
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td>4 PM</td>
+            <td>6 PM</td>
+            <td>
+                <button class="btn-edit" type="button">Edit</button>
+                <button class="btn-remove" type="button">Delete</button>
+            </td>
+        </tr>
+    </table>
+
+    <div class="chat-icon">💬</div>
+
+</body>
 </html>
