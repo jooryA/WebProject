@@ -460,23 +460,6 @@ body {
   color: var(--text);
 }
 
-/* Layout */
-root {
-  --bg: #fcf9f9;
-  --text: #111827;
-  --primary: #d8c3c3;
-  --primary-dark: #c2acac;
-  --card: #ffffff;
-  --card-soft: #f5eeee;
-}
-
-/* General */
-body {
-  margin: 0;
-  font-family: Arial;
-  background: var(--bg);
-  color: var(--text);
-}
 
 /* Layout */
 .dashboard-layout {
@@ -490,6 +473,18 @@ body {
   min-height: 100vh;
   padding: 20px;
   color: white;
+}
+
+.sidebar {
+  width: 260px;
+  background: var(--sidebar-purp);
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: white;
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0; /* Rounds only the right side */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .logo {
@@ -609,6 +604,7 @@ gap:20px;
   font-weight: bold;
   margin: 12px auto 0;
 }
+
 .schedule-item {
   display: flex;
   align-items: center;
