@@ -1,61 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title>Study Plan </title>
          <link rel="stylesheet" href="Style.css">
 
     </head>
     <body>
-              <nav>
-  <div class="logo">Smart Study Planner</div>
-  <ul>
-    <li><a href="dashboard.html">Dashboard</a></li>
-    <li><a href="courses.html">Courses</a></li>
-    <li><a href="deadline.html">Deadlines</a></li>
-    <li><a href="studyPlan.html" class="active">Study Plan</a></li>
-    <li><a href="availability.html" >Availability</a></li>
-    <li><a href="progress.html">Progress</a></li>
-    <li><a href="statistics.html" >Statistics</a></li>
-    <li class="dropdown">
-      <a href="#">🔔 <span id="badge">4</span></a>
-      <div class="dropdown-menu">
-        <p>Today's Sessions</p>
+      <nav>
+        <div class="logo">Smart Study Planner</div>
         <ul>
-          <li>Math - 6:00 PM</li>
-          <li>Physics - 8:00 PM</li>
-        </ul>
-        <p>Upcoming Deadlines</p>
-        <ul>
-          <li>Math - Assignment, April 13, 2026</li>
-          <li>Physics - Lab Report, April 15, 2026</li>
-        </ul>
-      </div>
-    </li>
-    <li><a href="login.html">Logout</a></li>
-  </ul>
-</nav>
-
-        <div class="container">
-            <h1>Smart Study Planner</h1>
-
-            <div class="card" id="plan-control">
-                <h2>Create Your Plan</h2>
-                <p>Once you've added your courses and availability, click below to build your custom schedule.</p>
-               <div class="center-content">
-                    <button class="btn-add" id="generatePlanBtn">Generate Now</button>
-               </div>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="deadline.html">Deadlines</a></li>
+          <li><a href="studyPlan.html" class="active">Study Plan</a></li>
+          <li><a href="availability.html">Availability</a></li>
+          <li><a href="progress.html">Progress</a></li>
+          <li><a href="statistics.html">Statistics</a></li>
+          <li class="dropdown">
+            <a href="#">🔔 <span id="badge">4</span></a>
+            <div class="dropdown-menu">
+              <p>Today's Sessions</p>
+              <ul>
+                <li>Math - 6:00 PM</li>
+                <li>Physics - 8:00 PM</li>
+              </ul>
+              <p>Upcoming Deadlines</p>
+              <ul>
+                <li>Math - Assignment, April 13, 2026</li>
+                <li>Physics - Lab Report, April 15, 2026</li>
+              </ul>
             </div>
-
-             <div class="card" id="plan-display">
-                <h2>Your Schedule</h2>
-
-                <div id="plan-output">
-                    <p>Your customized study sessions will appear here.</p>
-                </div>
-            </div>
+          </li>
+          <li><a href="login.html">Logout</a></li>
+        </ul>
+      </nav>
+    
+      <div class="container">
+        <h1>Smart Study Planner</h1>
+    
+        <div class="card" id="plan-control">
+          <h2>Create Your Plan</h2>
+          <p>Once you've added your courses and availability, click below to build your custom schedule.</p>
+          <div class="center-content">
+            <button class="btn-add" id="generatePlanBtn">Generate Now</button>
+          </div>
         </div>
-        <script src="planner.JS"></script>
-         <!-- Chatbot Button -->
-             <div class="chat-icon">💬</div>
+    
+        <div class="card" id="plan-display">
+          <h2>Your Schedule</h2>
+    
+          <div id="plan-output">
+            <p>Your customized study sessions will appear here.</p>
+          </div>
+        </div>
+      </div>
+      <script src="planner.JS"></script>
+      <!-- Chatbot Button -->
+      <div class="chat-icon">💬</div>
     </body>
 </html>
