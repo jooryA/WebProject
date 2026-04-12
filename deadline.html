@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8" >
   <title>Deadlines</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" >
 </head>
 <body>
 <nav>
@@ -47,16 +47,17 @@
       <div class="field">
         <label for="dl-course">Course</label>
         <select id="dl-course" required>
-          <option value="">-- Select a course --</option>
+      <option value="">-- Select a course --</option>
         </select>
       </div>
 
       <div class="field">
         <label for="dl-type">Type</label>
         <select id="dl-type" required>
-          <option value="assignment">Assignment</option>
-          <option value="exam">Exam</option>
-        </select>
+  <option value="">-- Select type --</option>
+  <option value="assignment">Assignment</option>
+  <option value="exam">Exam</option>
+</select>
       </div>
 
       <div class="field">
@@ -75,9 +76,9 @@
     <!-- Deadlines list -->
     <div class="card">
       <h2>Deadlines List</h2>
-      <h6 class="note">
+      <p class="note">
         Deadlines will be prioritized based on the nearest due date. 
-      </h6>
+      </p>
       <p class="empty" id="empty-msg" style="display:none;">No deadlines added yet.</p>
 
       <table id="dl-table">
@@ -110,8 +111,7 @@
 
   </div>
 
-</body>
-</html>
+
 
       <!-- Chatbot Button -->
        <div class="chat-icon">💬</div>
