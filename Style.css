@@ -475,18 +475,6 @@ body {
   color: white;
 }
 
-.sidebar {
-  width: 260px;
-  background: var(--sidebar-purp);
-  min-height: 100vh;
-  padding: 40px 20px;
-  color: white;
-  border-radius: 0 var(--radius-lg) var(--radius-lg) 0; /* Rounds only the right side */
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
 .logo {
   margin-bottom: 20px;
 }
