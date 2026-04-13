@@ -58,8 +58,6 @@ nav {
   align-items: center;
   box-shadow: 0 4px 14px rgba(159, 144, 255, 0.10);
 }
-
-
 nav .logo {
   font-size: 20px;
   font-weight: normal;
@@ -74,24 +72,21 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-   color: #512de0;
+   color:var(--text);
   font-size: 14px;
   padding: 8px 12px;
   border-radius: 8px;
   transition: 0.3s;
 }
-
 nav ul li a:hover {
   background-color: rgba(255, 255, 255, 0.18);
   color: #ffffff;
 }
-
 nav ul li a.active {
-  background-color: #3f2fa3;
+  background-color:var(--primary);
   color: #ffffff;
   font-weight: bold;
 }
-
 /* General layout */
 .container {
   max-width: 1100px; 
@@ -110,9 +105,8 @@ nav ul li a.active {
 .intro h1 {
   font-size: 48px;
   margin-bottom: 16px;
-  color: #3f2fa3;
+  color: var(--text);
 }
-
 .intro h2,
 .intro h3,
 .intro .subtitle {
@@ -120,10 +114,9 @@ nav ul li a.active {
   margin-bottom: 32px;
   font-weight: normal;
 }
-
 .intro .btn {
   display: inline-block;
- background: linear-gradient(135deg, #bfb3ff, #a899ff);
+  background: var(--primary);
   color:white;
   font-size: 16px;
   padding: 14px 32px;
@@ -133,13 +126,11 @@ nav ul li a.active {
   transition: 0.3s;
   box-shadow: 0 8px 18px rgba(91, 62, 230, 0.15);
 }
-
 .intro .btn:hover,
 .btn:hover {
-  background: linear-gradient(135deg, #b2a4ff, #9989ff);
+  background: var(--muted);
   box-shadow: 0 8px 18px rgba(91, 62, 230, 0.22);
 }
-
 /* Features */
 .features {
   display: grid;
@@ -147,7 +138,6 @@ nav ul li a.active {
   gap: 20px;
   padding: 0 60px 60px;
 }
-
 .feature-card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -156,23 +146,19 @@ nav ul li a.active {
   text-align: center;
   box-shadow: 0 6px 18px rgba(124, 92, 255, 0.08);
 }
-
 .feature-card .icon {
   font-size: 25px;
   margin-bottom: 15px;
 }
-
 .feature-card h3,
 .feature-card h4 {
   margin-bottom: 8px;
-  color: #563fd1;
+  color: var(--text);
 }
-
 .feature-card p {
   font-size: 13px;
   color: var(--muted);
 }
-
 /* Forms */
 input,
 select {
@@ -191,12 +177,10 @@ select:focus {
   border-color: var(--primary);
   box-shadow: 0 0 0 3px rgba(124, 92, 255, 0.14);
 }
-
 label {
   font-size: 13px;
-  color: #563fd1;
+  color: var(--text);
 }
-
 .field {
   display: flex;
   flex-direction: column;
@@ -223,15 +207,13 @@ label {
   border-radius: 10px;
   cursor: pointer;
   font-size: 14px;
-  background: linear-gradient(135deg, #bfb3ff, #a899ff);
+  background:var(--primary);
   color: #ffffff;
   text-decoration: none;
   display: inline-block;
 }
-
-
 .btn-add {
-  background: linear-gradient(135deg, #bfb3ff, #a899ff);
+  background: var(--primary);
   color: white;
   border: none;
   border-radius: 10px;
@@ -892,21 +874,7 @@ td {
     width: 100%;
     max-width: none;
   }
-
-  .chat-icon {
-    right: 16px;
-    bottom: 105px;
-  }
-
-  .chat-window {
-    right: 16px;
-    left: 16px;
-    width: auto;
-    bottom: 165px;
-  }
 }
-
-
 canvas {
     width: 100% !important;
     height: 300px !important;
