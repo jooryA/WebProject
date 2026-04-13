@@ -123,8 +123,8 @@ nav ul li a.active {
 
 .intro .btn {
   display: inline-block;
- background: linear-gradient(135deg, #dcd6ff, #c8bbff);
-  color: #4b3fa3;
+ background: linear-gradient(135deg, #bfb3ff, #a899ff);
+  color:white;
   font-size: 16px;
   padding: 14px 32px;
   border-radius: 12px;
@@ -136,7 +136,7 @@ nav ul li a.active {
 
 .intro .btn:hover,
 .btn:hover {
-  background: linear-gradient(135deg, #6d4df6, #4f35d4);
+  background: linear-gradient(135deg, #b2a4ff, #9989ff);
   box-shadow: 0 8px 18px rgba(91, 62, 230, 0.22);
 }
 
@@ -347,7 +347,7 @@ td {
   position: fixed;
   bottom: 95px;
   right: 20px;
-  background: linear-gradient(135deg, #bfb3ff, #a899ff);
+  background: var(--muted);
   color: white;
   font-size: 22px;
   padding: 15px;
@@ -374,7 +374,7 @@ td {
 }
 
 .chat-header {
-  background: linear-gradient(135deg, #7c5cff, #5b3ee6);
+  background: var(--muted);
   color: white;
   padding: 10px 12px;
   display: flex;
@@ -421,7 +421,7 @@ td {
 }
 
 .chat-input button {
-  background: linear-gradient(135deg, #7c5cff, #5b3ee6);
+  background: var(--muted);
   color: white;
   border: none;
   padding: 10px 15px;
