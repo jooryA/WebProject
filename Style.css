@@ -783,8 +783,7 @@ td {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(135deg, #512de0, #5b3ee6);
-  color: white;
+  color: #512de0;
   padding: 14px 20px;
   text-align: center;
   z-index: 998;
