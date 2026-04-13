@@ -905,3 +905,9 @@ td {
     bottom: 165px;
   }
 }
+
+
+canvas {
+    width: 100% !important;
+    height: 300px !important;
+}

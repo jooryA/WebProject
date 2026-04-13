@@ -10,6 +10,10 @@ new Chart(ctx, {
             backgroundColor: "#c8bbff",
             borderColor: "#c8bbff",
         }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false
     }
 })
 
@@ -28,5 +32,9 @@ new Chart(ctx2, {
             backgroundColor: "#c8bbff",
             borderColor: "#c8bbff"
         }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false
     }
 })
