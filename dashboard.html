@@ -1,109 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
+  <title>Dashboard | Smart Study Planner</title>
   <link rel="stylesheet" href="Style.css">
 </head>
+
 <body class="dashboard-page">
 
   <div class="dashboard-layout">
 
-    <!-- Sidebar -->
     <aside class="sidebar">
-       <div class="logo">Smart Study Planner</div>
-            <div class="profile">
-
-      <div class="profile-box">
-         <label for="upload-img">
-    <img id="profile-img" src="images/default-profile.png" alt="Profile Picture">
-  </label>
-  
-  <input type="file" id="upload-img" accept="image/*" hidden>
-   <h3>Sara</h3>
-        <p>Student</p>
-</div>
-       
+      <div class="logo">Smart Study Planner</div>
+      <div class="profile">
+        <div class="profile-box">
+          <label for="upload-img">
+            <img id="profile-img" src="images/default-profile.png" alt="Profile Picture">
+          </label>
+          <input type="file" id="upload-img" accept="image/*" hidden>
+          <h3>Sara</h3>
+          <p>Student</p>
+        </div>
       </div>
 
       <nav class="sidebar-menu">
-      <a href="dashboard.html" class="active">📊 Dashboard</a>
-      <a href="courses.html">📚 Courses</a>
-      <a href="deadline.html">⏰ Deadlines</a>
-      <a href="availability.html">⏳ Availability</a>
-      <a href="studyPlan.html">📅 Study Plan</a>
-      <a href="progress.html">📈 Progress</a>
-      <a href="statistics.html">📋 Statistics</a>
-      <a href="login.html" class="logout-link">🚪 Logout</a>
-</nav>
+        <a href="dashboard.html" class="active">📊 Dashboard</a>
+        <a href="courses.html">📚 Courses</a>
+        <a href="deadline.html">⏰ Deadlines</a>
+        <a href="availability.html">⏳ Availability</a>
+        <a href="studyPlan.html">📅 Study Plan</a>
+        <a href="progress.html">📈 Progress</a>
+        <a href="statistics.html">📋 Statistics</a>
+        <a href="login.html" class="logout-link">🚪 Logout</a>
+      </nav>
     </aside>
 
-    <!-- Main content -->
     <main class="main-content">
-      <div class="top-bar">
-    <h1>Hello, Sara!</h1>
-    
-    <input type="text" placeholder="Search">
 
-    <div class="dropdown" style="margin-left: auto;">
-      <a href="#" style="text-decoration:none;">🔔 <span id="badge">4</span></a>
-      <div class="dropdown-menu">
-        <p>Today's Sessions</p>
-        <ul><li>Math - 6:00 PM</li></ul>
-        <p>Upcoming Deadlines</p>
-        <ul><li>Math - April 13, 2026</li></ul>
+      <div class="top-bar">
+        <h1>Hello, Sara!</h1>
+        <input type="text" placeholder="Search...">
+
+        <div class="dropdown" style="margin-left: auto;">
+          <a href="#" style="text-decoration:none;">🔔 <span id="badge">4</span></a>
+          <div class="dropdown-menu">
+            <p>Today's Sessions</p>
+            <ul>
+              <li>Math - 6:00 PM</li>
+            </ul>
+            <p>Upcoming Deadlines</p>
+            <ul>
+              <li>Math - April 13, 2026</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
       <div class="dashboard-grid">
-
         <section class="main-cards">
-        
+
           <div class="card large-card">
             <h2>Deadlines</h2>
             <p>Track assignments and exams.</p>
             <a href="deadline.html" class="btn">Open</a>
           </div>
 
-          
+          <div class="card large-card">
+            <div class="card-content">
+              <h2>My Study Schedule</h2>
+              <p>Today's planned study sessions</p>
 
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <div class="schedule-time">4 PM</div>
+                  <div class="schedule-info">
+                    <h4>Software Engineering</h4>
+                    <p>Review requirements chapter</p>
+                  </div>
+                </div>
 
-         <div class="card large-card">
-  <div class="card-content">
-    <h2>My Study Schedule</h2>
-    <p>Today's planned study sessions</p>
+                <div class="schedule-item">
+                  <div class="schedule-time">6 PM</div>
+                  <div class="schedule-info">
+                    <h4>Operating Systems</h4>
+                    <p>Study process scheduling</p>
+                  </div>
+                </div>
 
-    <div class="schedule-list">
-      <div class="schedule-item">
-        <div class="schedule-time">4 PM</div>
-        <div class="schedule-info">
-          <h4>Software Engineering</h4>
-          <p>Review requirements chapter</p>
-        </div>
-      </div>
-
-      <div class="schedule-item">
-        <div class="schedule-time">6 PM</div>
-        <div class="schedule-info">
-          <h4>Operating Systems</h4>
-          <p>Study process scheduling</p>
-        </div>
-      </div>
-
-      <div class="schedule-item">
-        <div class="schedule-time">8 PM</div>
-        <div class="schedule-info">
-          <h4>Web Development</h4>
-          <p>Work on dashboard layout</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-          
-
+                <div class="schedule-item">
+                  <div class="schedule-time">8 PM</div>
+                  <div class="schedule-info">
+                    <h4>Web Development</h4>
+                    <p>Work on dashboard layout</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <aside class="right-panel">
@@ -122,19 +117,20 @@
             <div class="circle">75%</div>
           </div>
         </aside>
-
       </div>
-       <!-- Chatbot Button -->
-  <div class="chat-icon">💬</div>
+
       <footer class="dashboard-footer">
-  <div class="footer-content">
-    <p>© 2026 Smart Study Planner. All rights reserved.</p>
-    <p>Dashboard | Smart Study Planner</p>
-  </div>
-</footer>
+        <div class="footer-content">
+          <p>© 2026 Smart Study Planner. All rights reserved.</p>
+          <p>Dashboard | Smart Study Planner</p>
+        </div>
+      </footer>
     </main>
 
   </div>
- 
+
+  <div class="chat-icon">💬</div>
+
 </body>
+
 </html>
