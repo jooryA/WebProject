@@ -695,16 +695,18 @@ td {
   position: relative;
   margin-bottom: 30px;
   gap: 20px;
+  width: 100%;
 }
 
 .top-bar h1 {
-  margin: 0;
+  flex: 1;
 }
 
 .top-bar input {
   width: 40%;
   max-width: 300px;
   min-width: 150px;
+  margin-left: auto;
 }
 
 .dashboard-grid {
@@ -750,9 +752,13 @@ td {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color:#bfb2f3;
   font-weight: bold;
   margin: 12px auto 0;
+   background: conic-gradient(
+    #7c5cff calc(var(--value) * 1%),
+    #eee 0
+  );
 }
 
 .schedule-item {
