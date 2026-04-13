@@ -624,10 +624,8 @@ td {
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
-  padding: 0;
-  margin: 0;
-  gap: 0 !important; 
-  list-style: none;
+  position: relative;
+  z-index: 1;
 }
 
 .sidebar-menu a {
@@ -662,7 +660,14 @@ td {
   border-top: none;
   padding: 12px 25px; 
 }
-
+.logout-link {
+  position: relative;
+  z-index: 9999;
+  cursor: pointer;
+}
+.sidebar {
+  z-index: 1000;
+}
 .logout-link:hover {
   background: #a696ff;
 }
