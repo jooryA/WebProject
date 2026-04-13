@@ -8,36 +8,52 @@
 </head>
 <body>
 
-<nav>
+<div class="dashboard-layout">
+  
+  <aside class="sidebar">
   <div class="logo">Smart Study Planner</div>
-  <ul>
-    <li><a href="dashboard.html">Dashboard</a></li>
-    <li><a href="courses.html" class="active">Courses</a></li>
-    <li><a href="deadline.html">Deadlines</a></li>
-    <li><a href="studyPlan.html">Study Plan</a></li>
-    <li><a href="availability.html">Availability</a></li>
-    <li><a href="progress.html">Progress</a></li>
-    <li><a href="statistics.html">Statistics</a></li>
-    <li class="dropdown">
-      <a href="#">🔔 <span id="badge">4</span></a>
-      <div class="dropdown-menu">
-        <p>Today's Sessions</p>
-        <ul>
-          <li>Math - 6:00 PM</li>
-          <li>Physics - 8:00 PM</li>
-        </ul>
-        <p>Upcoming Deadlines</p>
-        <ul>
-          <li>Math - Assignment, April 13, 2026</li>
-          <li>Physics - Lab Report, April 15, 2026</li>
-        </ul>
-      </div>
-    </li>
-    <li><a href="login.html">Logout</a></li>
-  </ul>
-</nav>
+  
+  <div class="profile">
+    <div class="profile-box">
+      <label for="upload-img">
+        <img id="profile-img" src="images/default-profile.png" alt="Profile Picture">
+      </label>
+      <input type="file" id="upload-img" accept="image/*" hidden>
+      <h3>Sara</h3>
+      <p>Student</p>
+    </div>
+  </div>
 
-<div class="container">
+  <nav class="sidebar-menu">
+    <a href="dashboard.html">📊 Dashboard</a>
+    <a href="courses.html" class="active">📚 Courses</a>
+    <a href="deadline.html">⏰ Deadlines</a>
+    <a href="availability.html">⏳ Availability</a>
+    <a href="studyPlan.html">📅 Study Plan</a>
+    <a href="progress.html">📈 Progress</a>
+    <a href="statistics.html">📋 Statistics</a>
+    <a href="login.html" class="logout-link">🚪 Logout</a>
+  </nav>
+</aside>
+
+  <main class="main-content">
+    
+    <div class="top-bar">
+      <h1>My Courses</h1>
+      <input type="text" placeholder="Search courses...">
+      
+      <div class="dropdown" style="margin-left: auto;">
+        <a href="#" style="text-decoration:none;">🔔 <span id="badge">4</span></a>
+        <div class="dropdown-menu">
+          <p>Today's Sessions</p>
+          <ul><li>Math - 6:00 PM</li></ul>
+          <p>Upcoming Deadlines</p>
+          <ul><li>Math - April 13, 2026</li></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
   <h1>My Courses</h1>
 
   <form id="course-form">
@@ -111,6 +127,11 @@
   </div>
 
 </div>
+</div>
+  </main>
+
+
+
 
 <div class="chat-icon">💬</div>
 

@@ -1,44 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Study Plan </title>
-         <link rel="stylesheet" href="Style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Plan</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body class="dashboard-page">
 
-    </head>
-    <body>
-      <nav>
-        <div class="logo">Smart Study Planner</div>
-        <ul>
-          <li><a href="dashboard.html">Dashboard</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="deadline.html">Deadlines</a></li>
-          <li><a href="studyPlan.html" class="active">Study Plan</a></li>
-          <li><a href="availability.html">Availability</a></li>
-          <li><a href="progress.html">Progress</a></li>
-          <li><a href="statistics.html">Statistics</a></li>
-          <li class="dropdown">
-            <a href="#">🔔 <span id="badge">4</span></a>
-            <div class="dropdown-menu">
-              <p>Today's Sessions</p>
-              <ul>
-                <li>Math - 6:00 PM</li>
-                <li>Physics - 8:00 PM</li>
-              </ul>
-              <p>Upcoming Deadlines</p>
-              <ul>
-                <li>Math - Assignment, April 13, 2026</li>
-                <li>Physics - Lab Report, April 15, 2026</li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="login.html">Logout</a></li>
-        </ul>
+  <div class="dashboard-layout">
+
+    <aside class="sidebar">
+      <div class="logo">Smart Study Planner</div>
+      <div class="profile">
+        <div class="profile-box">
+          <label for="upload-img">
+            <img id="profile-img" src="images/default-profile.png" alt="Profile Picture">
+          </label>
+          <input type="file" id="upload-img" accept="image/*" hidden>
+          <h3>Sara</h3>
+          <p>Student</p>
+        </div>
+      </div>
+
+      <nav class="sidebar-menu">
+        <a href="dashboard.html">📊 Dashboard</a>
+        <a href="courses.html">📚 Courses</a>
+        <a href="deadline.html">⏰ Deadlines</a>
+        <a href="availability.html">⏳ Availability</a>
+        <a href="studyPlan.html" class="active">📅 Study Plan</a>
+        <a href="progress.html">📈 Progress</a>
+        <a href="statistics.html">📋 Statistics</a>
+        <a href="login.html" class="logout-link">🚪 Logout</a>
       </nav>
-    
-      <div class="container">
+    </aside>
+
+    <main class="main-content">
+      
+      <div class="top-bar">
         <h1>Smart Study Planner</h1>
-    
+        <input type="text" placeholder="Search plans...">
+        
+        <div class="dropdown" style="margin-left: auto;">
+          <a href="#" style="text-decoration:none;">🔔 <span id="badge">4</span></a>
+          <div class="dropdown-menu">
+            <p>Today's Sessions</p>
+            <ul>
+              <li>Math - 6:00 PM</li>
+              <li>Physics - 8:00 PM</li>
+            </ul>
+            <p>Upcoming Deadlines</p>
+            <ul>
+              <li>Math - April 13, 2026</li>
+              <li>Physics - April 15, 2026</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
         <div class="card" id="plan-control">
           <h2>Create Your Plan</h2>
           <p>Once you've added your courses and availability, click below to build your custom schedule.</p>
@@ -49,14 +69,17 @@
     
         <div class="card" id="plan-display">
           <h2>Your Schedule</h2>
-    
           <div id="plan-output">
             <p>Your customized study sessions will appear here.</p>
           </div>
         </div>
       </div>
-      <script src="planner.JS"></script>
-      <!-- Chatbot Button -->
-      <div class="chat-icon">💬</div>
-    </body>
+    </main>
+
+  </div>
+
+  <div class="chat-icon">💬</div>
+
+  <script src="planner.JS"></script>
+</body>
 </html>

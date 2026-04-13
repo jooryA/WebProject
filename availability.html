@@ -1,51 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>availability</title>
-    <link rel="stylesheet" href="Style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Availability</title>
+  <link rel="stylesheet" href="Style.css">
 </head>
-<body class="availability-page">
+<body class="dashboard-page">
 
-    <nav>
-        <div class="logo">Smart Study Planner</div>
-        <ul>
-            <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="deadline.html">Deadlines</a></li>
-            <li><a href="studyPlan.html">Study Plan</a></li>
-            <li><a href="availability.html" class="active">Availability</a></li>
-            <li><a href="progress.html">Progress</a></li>
-            <li><a href="statistics.html">Statistics</a></li>
+  <div class="dashboard-layout">
 
-            <li class="dropdown">
-                <a href="#">🔔 <span id="badge">4</span></a>
-                <div class="dropdown-menu">
-                    <p>Today's Sessions</p>
-                    <ul>
-                        <li>Math - 6:00 PM</li>
-                        <li>Physics - 8:00 PM</li>
-                    </ul>
+    <aside class="sidebar">
+      <div class="logo">Smart Study Planner</div>
+      <div class="profile">
+        <div class="profile-box">
+          <label for="upload-img">
+            <img id="profile-img" src="images/default-profile.png" alt="Profile Picture">
+          </label>
+          <input type="file" id="upload-img" accept="image/*" hidden>
+          <h3>Sara</h3>
+          <p>Student</p>
+        </div>
+      </div>
 
-                    <p>Upcoming Deadlines</p>
-                    <ul>
-                        <li>Math - Assignment, April 13, 2026</li>
-                        <li>Physics - Lab Report, April 15, 2026</li>
-                    </ul>
-                </div>
-            </li>
+      <nav class="sidebar-menu">
+        <a href="dashboard.html">📊 Dashboard</a>
+        <a href="courses.html">📚 Courses</a>
+        <a href="deadline.html">⏰ Deadlines</a>
+        <a href="availability.html" class="active">⏳ Availability</a>
+        <a href="studyPlan.html">📅 Study Plan</a>
+        <a href="progress.html">📈 Progress</a>
+        <a href="statistics.html">📋 Statistics</a>
+        <a href="login.html" class="logout-link">🚪 Logout</a>
+      </nav>
+    </aside>
 
-            <li><a href="login.html">Logout</a></li>
-        </ul>
-    </nav>
+    <main class="main-content">
+      
+      <div class="top-bar">
+        <h1>Weekly Availability</h1>
+        <input type="text" placeholder="Search availability...">
+        
+        <div class="dropdown" style="margin-left: auto;">
+          <a href="#" style="text-decoration:none;">🔔 <span id="badge">4</span></a>
+          <div class="dropdown-menu">
+            <p>Today's Sessions</p>
+            <ul>
+              <li>Math - 6:00 PM</li>
+              <li>Physics - 8:00 PM</li>
+            </ul>
+            <p>Upcoming Deadlines</p>
+            <ul>
+              <li>Math - April 13, 2026</li>
+              <li>Physics - April 15, 2026</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-    <h1>Weekly Availability</h1>
-    <h3>Please Set Your Availability Time</h3>
-
-    <form>
-        <div>
-            Day:<br>
-            <select id="day" name="day">
+      <div class="container">
+          
+          <h3 style="text-align: center; margin-bottom: 20px;">Please Set Your Availability Time</h3>
+          
+          <form class="card">
+            <div class="field">
+              <label for="day">Day</label>
+              <select id="day" name="day">
                 <option>Sunday</option>
                 <option>Monday</option>
                 <option>Tuesday</option>
@@ -53,45 +73,56 @@
                 <option>Thursday</option>
                 <option>Friday</option>
                 <option>Saturday</option>
-            </select>
-        </div>
+              </select>
+            </div>
 
-        <div>
-            <label for="startTime">Start Time:</label><br>
-            <input type="time" id="startTime" name="startTime">
-        </div>
+            <div class="field">
+              <label for="startTime">Start Time</label>
+              <input type="time" id="startTime" name="startTime">
+            </div>
 
-        <div>
-            <label for="endTime">End Time:</label><br>
-            <input type="time" id="endTime" name="endTime">
-        </div>
+            <div class="field">
+              <label for="endTime">End Time</label>
+              <input type="time" id="endTime" name="endTime">
+            </div>
 
-        <div>
-            <button class="btn" type="submit">Add</button>
-        </div>
-    </form>
+            <div class="center-content">
+              <button class="btn" type="submit">Add Time Slot</button>
+            </div>
+          </form>
 
-    <h2>Saved Availability Successfully</h2>
+          <h2 style="margin-top: 50px; text-align: center;">Saved Availability</h2>
+          <div class="card">
+            <table>
+              <thead>
+                <tr>
+                  <th>Day</th>
+                  <th>Start</th>
+                  <th>End</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sunday</td>
+                  <td>4 PM</td>
+                  <td>6 PM</td>
+                  <td>
+                    <button class="btn-edit" type="button">Edit</button>
+                    <button class="btn-remove" type="button">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-    <table>
-        <tr>
-            <th>Day</th>
-            <th>Start</th>
-            <th>End</th>
-            <th>Action</th>
-        </tr>
-        <tr>
-            <td>Sunday</td>
-            <td>4 PM</td>
-            <td>6 PM</td>
-            <td>
-                <button class="btn-edit" type="button">Edit</button>
-                <button class="btn-remove" type="button">Delete</button>
-            </td>
-        </tr>
-    </table>
+      </div>
 
-    <div class="chat-icon">💬</div>
+    </main>
+
+  </div>
+
+  <div class="chat-icon">💬</div>
 
 </body>
 </html>
