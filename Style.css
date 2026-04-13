@@ -706,10 +706,6 @@ td {
   grid-column: span 2;
 }
 
-.small-card {
-  grid-column: span 1;
-}
-
 .right-panel {
   display: flex;
   flex-direction: column;
