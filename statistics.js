@@ -11,8 +11,8 @@ new Chart(ctx, {
             borderColor: "#c8bbff",
         }]
     },
+   //to let css change the chart size
     options: {
-        responsive: true,
         maintainAspectRatio: false
     }
 })
@@ -34,7 +34,6 @@ new Chart(ctx2, {
         }]
     },
     options: {
-        responsive: true,
         maintainAspectRatio: false
     }
 })
